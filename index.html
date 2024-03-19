@@ -49,10 +49,12 @@
 }
 .location button span {
   font-family: "Arial", sans-serif; /* Change the font family */
-  font-size: 16px; /* Change the font size */
+  font-size: 20px; /* Change the font size */
 }
 .button-icon {
-  margin-right: 10px; /* Adjust the spacing between icon and text */
+  margin-right: 10px;
+  background-color: transparent ; /* Set background color of the image */
+  border-radius: 50%; /* Ensure the image is circular */
 }
 .location button.active::after {
     background-color: black; /* Change color for active button */
@@ -141,10 +143,10 @@
 </head>
 <body>
     <div class="container">
-        <h2><u>Student Discounts</u></h2>
+        <h2><u>Community Discounts</u></h2>
         <div class="location" id="location1">
           <button aria-expanded="false" id="button1" onclick="toggleHours(1)">
-            <img src="https://forums.terraria.org/index.php?attachments/simply-sushi-1-gif.344932/" alt="Food Icon" class="button-icon">
+            <img src="https://github.com/Michaelangelo2323/apptime/blob/main/icons8-asian-street-food-64.png?raw=true" alt="Asian Street Food Icon" width="40" height="40" style="margin-right: 5px;">
             <span>Food</span>
           </button>
           <div class="hours" id="hours1" aria-hidden="true">
@@ -182,7 +184,10 @@
           </div>
         </div>
         <div class="location" id="location2">
-          <button aria-expanded="false" id="button2" onclick="toggleHours(2)">Fitness</button>
+          <button aria-expanded="false" id="button2" onclick="toggleHours(2)">
+            <img src="https://github.com/Michaelangelo2323/apptime/blob/main/icons8-fitness-64.png?raw=true" alt="Fitness Icon" width="40" height="40" style="margin-right: 5px;">
+              <span>Fitness</span>
+          </button>
           <div class="hours" id="hours2" aria-hidden="true">
             Anytime Fitness | $31.49/month
             <br>
@@ -190,7 +195,10 @@
             Fitness World | $20/month
             <br>
             <hr>
-            Jax Yoga | Illinois College Staff 25% Off code HILLTOPSTAFF or Illinois College Students 40% off code HILLTOP
+            Jax Yoga | IC Staff 25% Off code: HILLTOPSTAFF
+            <br>
+            <br> 
+            Students 40% off code: HILLTOP 
             <br>
             <hr>
             K's Creek | $10/9 holes
@@ -203,7 +211,10 @@
           </div>
         </div>
         <div class="location" id="location3">
-              <button aria-expanded="false" id="button3" onclick="toggleHours(3)">Shopping</button>
+              <button aria-expanded="false" id="button3" onclick="toggleHours(3)">
+                <img src="https://github.com/Michaelangelo2323/apptime/blob/main/icons8-fast-cart-64.png?raw=true" alt="Shopping Cart Image" width="40" height="40" style="margin-right: 5px;">
+              <span>Shopping</span>
+              </button>
               <div class="hours" id="hours3" aria-hidden="true">
                 AT&T | Call For Details
                 <br>
@@ -238,7 +249,7 @@
                 ProActive Chiropractic & Rehab | Initial Free
                 <br>
                 <hr>
-                Primrose & La.. | 10% Off
+                Primrose & Lace | 10% Off
                 <br>
                 <hr>
                 Purlux Nails | 10% Off
